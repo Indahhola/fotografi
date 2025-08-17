@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Indahhola Photography - Jasa Foto Wisuda & Acara</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #222831;
+      color: #eeeeee;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: #00adb5;
+      text-decoration: none;
+      margin: 0 0.7rem;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80') no-repeat center center/cover;
+      height: 320px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 0 0 8px rgba(0,0,0,0.7);
+      margin-bottom: 2rem;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h3 {
+      color: #222831;
+      border-bottom: 2px solid #00adb5;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+    ul.services {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    ul.services li {
+      background: #00adb5;
+      color: white;
+      padding: 1rem;
+      border-radius: 6px;
+      flex: 1 1 200px;
+      text-align: center;
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    .pricing table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .pricing th, .pricing td {
+      border: 1px solid #ddd;
+      padding: 0.8rem;
+      text-align: left;
+    }
+    .pricing th {
+      background: #00adb5;
+      color: white;
+    }
+    .contact a {
+      color: #00adb5;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 1rem;
+    }
+    .portfolio img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .portfolio img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: #222831;
+      color: #eeeeee;
+      text-align: center;
+      padding: 1rem 2rem;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.3rem 0;
+      }
+      ul.services {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Indahhola Photography</h1>
+    <nav>
+      <a href="#about">Tentang</a>
+      <a href="#services">Layanan</a>
+      <a href="#pricing">Paket & Harga</a>
+      <a href="#portfolio">Portofolio</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="hero">
+      <h2>Abadikan Momen Berharga Anda dengan Profesional</h2>
+    </section>
+
+    <section id="about">
+      <h3>Tentang Saya</h3>
+      <p>Halo! Saya Indah, fotografer freelance yang siap mengabadikan momen berharga Anda, mulai dari wisuda, acara keluarga, hingga prewedding. Berdomisili di Yogyakarta dan melayani area sekitarnya.</p>
+    </section>
+
+    <section id="services">
+      <h3>Layanan</h3>
+      <ul class="services">
+        <li>Foto Wisuda</li>
+        <li>Foto Acara (Ulang Tahun, Seminar, dll)</li>
+        <li>Prewedding</li>
+      </ul>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <h3>Paket & Harga</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Paket</th>
+            <th>Harga</th>
+            <th>Deskripsi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Paket Wisuda A</td>
+            <td>Rp150.000</td>
+            <td>10 file edit, 1 jam pemotretan</td>
+          </tr>
+          <tr>
+            <td>Paket Event</td>
+            <td>Mulai dari Rp300.000</td>
+            <td>Foto dokumentasi acara sesuai request</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>*Hubungi untuk konsultasi gratis dan request khusus!</p>
+    </section>
+
+    <section id="portfolio">
+      <h3>Portofolio</h3>
+      <div class="portfolio">
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=400&q=80" alt="Portofolio Foto 1" />
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80" alt="Portofolio Foto 2" />
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="Portofolio Foto 3" />
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3>Kontak</h3>
+      <p>Hubungi saya untuk pemesanan dan info lebih lanjut:</p>
+      <ul>
+        <li>WhatsApp: <a href="https://wa.me/6285803672692" target="_blank" rel="noopener noreferrer">085803672692</a></li>
+        <li>Instagram: <a href="https://instagram.com/ottaa_aa" target="_blank" rel="noopener noreferrer">@ottaa_aa</a></li>
+      </ul>
+      <p><a href="https://wa.me/6285803672692" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#00adb5;color:#fff;padding:10px 20px;border-radius:5px;text-decoration:none;font-weight:700;">Pesan Sekarang via WhatsApp</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Indahhola Photography - All Rights Reserved</p>
+  </footer>
+</body>
+</html>
